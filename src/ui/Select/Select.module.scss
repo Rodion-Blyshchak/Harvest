@@ -1,0 +1,15 @@
+@import '../../styles/mixins';
+
+.select {
+  @include blur-softer;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-default);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+
+  &__default {
+    color: var(--black-dark);
+    background: var(--grey-opacity);
+  }
+}

@@ -1,0 +1,22 @@
+.image {
+  width: 100px;
+  height: 150px;
+}
+
+.item {
+  border-bottom: 2px solid var(--grey-opacity);
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+  text-transform: uppercase;
+}
+
+.price {
+  text-align: end;
+  padding: 10px 0;
+  font-weight: 500;
+}

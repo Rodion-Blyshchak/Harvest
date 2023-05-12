@@ -1,0 +1,15 @@
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-index-minus-1);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 700px 0 30px 0;
+}

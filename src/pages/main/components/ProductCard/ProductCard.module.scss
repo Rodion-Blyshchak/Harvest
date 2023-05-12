@@ -1,0 +1,13 @@
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50%, 1fr));
+}
+
+.content {
+  background: var(--grey-background-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}

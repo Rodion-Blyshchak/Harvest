@@ -1,0 +1,16 @@
+.like {
+  margin: 12px;
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  background: var(--grey-background-light);
+  border-radius: 50px;
+}
+
+.active {
+  fill: var(--red);
+}
+
+.notActive {
+  fill: var(--black);
+}

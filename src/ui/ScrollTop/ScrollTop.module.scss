@@ -1,0 +1,48 @@
+$transformDefault: translateY(30px);
+$transformHover: translateY(15px);
+
+.button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  height: 70px;
+  width: 70px;
+  background: var(--body-dark);
+  border-radius: var(--border-radius-default);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  &:hover {
+    .button__line {
+      opacity: 1;
+      transform: scale(1);
+      transform: $transformHover;
+      transition: var(--transition-default);
+    }
+    .button__arrow {
+      transform: $transformHover;
+      transition: var(--transition-default);
+    }
+  }
+
+  &__arrow {
+    font-size: 70px;
+    transform: $transformDefault;
+    transition: var(--transition-default);
+  }
+
+  &__line {
+    opacity: 0;
+    transform: scale(0);
+    transform: $transformDefault;
+    transition: var(--transition-default);
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    bottom: 20px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../styles/mixins';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: var(--z-index-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include blur-softer;
+  background: var(--black-opacity);
+
+  &Content {
+    background: var(--body-background);
+    border-radius: var(--border-radius-default);
+    margin: 16px;
+  }
+}

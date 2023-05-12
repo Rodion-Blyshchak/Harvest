@@ -1,0 +1,27 @@
+.wrapper {
+  background: var(--white-dark);
+  padding: 0 16px 16px;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  border-bottom: 2px solid var(--grey-opacity);
+  padding-bottom: 20px;
+}
+
+.button {
+  margin-top: 30px;
+  text-align: center;
+}

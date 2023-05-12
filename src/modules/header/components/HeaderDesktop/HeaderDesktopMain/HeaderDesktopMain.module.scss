@@ -1,0 +1,25 @@
+@import '../../../../../styles/mixins';
+
+.header {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--black-hidden);
+  height: fit-content;
+  background: var(--body-background);
+
+  &Fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: var(--z-index-low);
+  }
+}
+
+.bodyFixed {
+  @include flex-between;
+}
+
+.menuList {
+  @include flex-center;
+  gap: 20px;
+}

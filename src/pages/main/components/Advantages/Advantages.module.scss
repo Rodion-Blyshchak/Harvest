@@ -1,0 +1,45 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(1px, 1fr));
+  gap: 20px;
+  padding: 50px 0;
+  width: 80%;
+  margin: 0 auto;
+
+  &Item {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .icon {
+      transform: rotateY(0deg);
+      transition: var(--transition-default);
+    }
+
+    &:hover {
+      .icon {
+        transform: rotateY(180deg);
+        transform-origin: center;
+        transition: var(--transition-default);
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .list {
+    width: 100%;
+    padding: 50px 16px;
+
+    &Item {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .list {
+    grid-template-columns: repeat(1, minmax(1px, 1fr));
+  }
+}

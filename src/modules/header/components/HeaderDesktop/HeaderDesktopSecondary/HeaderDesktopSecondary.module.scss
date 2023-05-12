@@ -1,0 +1,12 @@
+@import '../../../../../styles/mixins';
+
+.header {
+  background: var(--black-dark);
+  color: var(--white);
+  padding: 8px 0;
+}
+
+.body {
+  @include flex-between;
+  gap: 10px;
+}

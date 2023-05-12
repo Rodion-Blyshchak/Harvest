@@ -1,0 +1,67 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "semi": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
+    "react/require-default-props": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-param-reassign": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-promise-executor-return": "off",
+    "object-curly-newline": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "@next/next/no-document-import-in-page": "off",
+    "@next/next/no-title-in-document-head": "off",
+    "consistent-return": "off",
+    "comma-dangle": "off",
+    "react/destructuring-assignment": "off",
+    "class-methods-use-this": "off",
+    "operator-linebreak": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react/button-has-type": "off",
+    "function-paren-newline": "off",
+    "react/no-array-index-key": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "import/prefer-default-export": "off",
+    "indent": "off",
+    "react/jsx-curly-newline": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "react-hooks/rules-of-hooks": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.test.ts", "*.test.tsx"],
+      "rules": {
+        "jest/valid-expect": 0,
+        "no-undef": "off"
+      }
+    },
+    // Only uses Testing Library lint rules in test files
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ]
+}

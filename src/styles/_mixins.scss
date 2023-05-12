@@ -1,0 +1,68 @@
+@use 'sass:math';
+
+// @function rem($px) {
+//   $result: math.div($px, 16) + rem;
+//   @return $result;
+// }
+
+// @function adaptive-value(
+//   $startSize,
+//   $minSize,
+//   $customWidthFrom: 1410,
+//   $customWidthTo: 320
+// ) {
+//   $widthFrom: $customWidthFrom;
+//   $widthTo: $customWidthTo;
+
+//   // Формула плавующого значення
+//   $slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
+//   $yIntersection: -$widthTo * $slope + $minSize;
+
+//   // Отримання значення властивості
+//   $flyValue: #{rem($yIntersection)}' + ' #{$slope * 100}vw;
+
+//   $propertyValue: #{'clamp(' rem($minSize) ',' $flyValue ',' rem($startSize) ')'};
+//   // Якщо значення мінусове
+//   @if ($minSize > $startSize) {
+//     $propertyValue: #{'clamp('
+//       rem($startSize)
+//       ','
+//       $flyValue
+//       ','
+//       rem($minSize)
+//       ')'};
+//   }
+
+//   @return $propertyValue;
+// }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin pos-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin blur {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+@mixin blur-softer {
+  backdrop-filter: blur(6px);
+}
+
+// @include blur;

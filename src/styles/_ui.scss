@@ -1,0 +1,241 @@
+@import './mixins';
+
+// ====================================================================================
+:root .label {
+  --label-color: rgba(16, 14, 15, 1);
+}
+
+[data-theme='dark'] .label {
+  --label-color: rgba(255, 255, 255, 1);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  color: var(--label-color);
+
+  &-checkbox {
+    flex-direction: row;
+  }
+}
+
+// ====================================================================================
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// ====================================================================================
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+// ====================================================================================
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+// ====================================================================================
+.d-flex {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+// ====================================================================================
+
+.gap-4 {
+  gap: rem(4);
+}
+
+.gap-6 {
+  gap: rem(6);
+}
+
+.gap-10 {
+  gap: rem(10);
+}
+
+.gap-20 {
+  gap: rem(20);
+}
+
+.gap-30 {
+  gap: rem(30);
+}
+
+// ====================================================================================
+.mr-4 {
+  margin-right: rem(4);
+}
+
+.ml-4 {
+  margin-left: rem(4);
+}
+
+.mt-4 {
+  margin-top: rem(4);
+}
+
+.mt-6 {
+  margin-top: rem(6);
+}
+
+.mt-20 {
+  margin-top: rem(20);
+}
+
+.mt-30 {
+  margin-top: rem(30);
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+// ====================================================================================
+
+.pt-50 {
+  padding-top: rem(50);
+}
+
+.pt-30 {
+  padding-top: rem(30);
+}
+
+.pb-10 {
+  padding-bottom: rem(10);
+}
+
+.pb-20 {
+  padding-bottom: rem(20);
+}
+
+.pl-10 {
+  padding-left: rem(10);
+}
+
+.p-0-10 {
+  padding: 0 rem(10);
+}
+
+// ==================================================================================== TEXTS
+
+.text-center {
+  text-align: center;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.td-underline {
+  text-decoration: underline;
+}
+
+.td-underline-hover {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.white-space-normal {
+  white-space: normal;
+}
+
+// ====================================================================================================
+.text-overflow-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
+.text-overflow-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+.text-overflow-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+
+// ====================================================================================
+.page-title {
+  font-size: rem(50);
+  font-weight: 700;
+  color: var(--color-page-title);
+}
+
+// ====================================================================================
+.color-black-and-white {
+  color: var(--black);
+}
+
+[data-theme='dark'] {
+  .color-black-and-white {
+    color: var(--white);
+  }
+}
+
+.background-body {
+  background: var(--body-background);
+}
+
+.background-black {
+  background: var(--black);
+}
+
+.color-black {
+  color: var(--black);
+}
+
+.color-black-dark {
+  color: var(--black-dark);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+.color-blue {
+  color: var(--blue);
+}
+
+.color-red {
+  color: var(--red);
+}

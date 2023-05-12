@@ -1,0 +1,88 @@
+.button {
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 22px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-radius: var(--border-radius-default);
+
+  &__white {
+    background: var(--white);
+    color: var(--black-dark);
+    transition: var(--transition-default);
+
+    &:hover {
+      background: var(--light);
+    }
+  }
+
+  &__black {
+    background: var(--black-dark);
+    color: var(--white);
+    transition: var(--transition-default);
+
+    &:hover {
+      background: var(--dark-grey-lighter);
+    }
+  }
+
+  &__grey {
+    color: var(--black-dark);
+    background: var(--grey-light);
+    transition: var(--transition-default);
+
+    &:hover {
+      background: var(--grey-opacity);
+    }
+  }
+
+  &__transparent {
+    padding: 0.55em 0 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--white);
+
+    position: relative;
+    transition: 0.3s;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background: var(--white);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: scaleX(1);
+      transition: 0.3s;
+    }
+
+    &:hover::before {
+      transform: scaleX(0.5);
+    }
+  }
+
+  &__green {
+    background: var(--green);
+    color: var(--black);
+    width: 100%;
+    font-weight: 400;
+    transition: var(--transition-default);
+
+    &:hover {
+      background: var(--green-dark);
+    }
+    &-active {
+      background: var(--green);
+      font-weight: 400;
+      transition: var(--transition-default);
+
+      &:hover {
+        background: var(--green-dark);
+      }
+    }
+  }
+}
