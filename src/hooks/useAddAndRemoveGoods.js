@@ -3,15 +3,15 @@ import { addItemInGoods, removeItemInGoods } from '../store/reducers/GoodsSlice'
 
 const useAddAndRemoveGoods = (goodsDataItem, fieldName) => {
   const dispatch = useDispatch()
-  const items = useSelector((state) => state.goods[fieldName])
-  const isItemsInGoods = items.some((item) => item.id === goodsDataItem.id)
+  const productList = useSelector((state) => state.goods[fieldName])
+  const isItemsInGoods = productList.some((product) => product.id === goodsDataItem.id)
 
   const handleClick = (event) => {
     event.stopPropagation()
     if (isItemsInGoods) {
-      dispatch(removeItemInGoods({ id: goodsDataItem.id, fieldName }))
+      dispatch(removeItemInGoods({ product: goodsDataItem, fieldName }))
     } else {
-      dispatch(addItemInGoods({ id: goodsDataItem, fieldName }))
+      dispatch(addItemInGoods({ product: goodsDataItem, fieldName }))
     }
   }
 

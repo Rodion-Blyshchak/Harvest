@@ -8,11 +8,11 @@ const GoodsSlice = createSlice({
   },
   reducers: {
     addItemInGoods: (state, action) => {
-      state[action.payload.fieldName].push(action.payload.id)
+      state[action.payload.fieldName].push(action.payload.product)
     },
     removeItemInGoods: (state, action) => {
       state[action.payload.fieldName] = state[action.payload.fieldName].filter(
-        (data) => data.id !== action.payload.id
+        (product) => product.id !== action.payload.product.id
       )
     },
   },

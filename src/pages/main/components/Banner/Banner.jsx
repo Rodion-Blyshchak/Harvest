@@ -3,9 +3,9 @@ import BannerDesktop from './BannerDesktop/BannerDesktop'
 import UnitGoodsCard from './UnitGoodsCard/UnitGoodsCard'
 
 const Banner = () => {
-  const adaptive = useAdaptive()
+  const isMobile = useAdaptive()
 
-  return adaptive ? <UnitGoodsCard /> : <BannerDesktop />
+  return isMobile ? <UnitGoodsCard /> : <BannerDesktop />
 }
 
 export default Banner

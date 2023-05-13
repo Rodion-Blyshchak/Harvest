@@ -8,7 +8,7 @@ const GalleryList = () => {
   const [activeModal, setActiveModal] = useState(false)
   const [activeModalContent, setActiveModalContent] = useState(null)
 
-  const modal = (active) => {
+  const openModalHandler = (active) => {
     setActiveModalContent(active)
     setActiveModal(true)
   }
@@ -20,7 +20,7 @@ const GalleryList = () => {
           <li
             key={imageItem.id}
             className={styles.listImages__item}
-            onClick={() => modal(imageItem)}
+            onClick={() => openModalHandler(imageItem)}
           >
             <img src={imageItem.image} alt={imageItem.image} />
             <p className={styles.hoverEffect}>@harvest_ua</p>

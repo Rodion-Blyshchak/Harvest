@@ -12,11 +12,12 @@ const AddLikes = ({ goodsDataItem, className }) => {
   return (
     <>
       <button onClick={handleClick} className={className}>
-        {isItemsInGoods ? (
-          <Like className={classNames(styles.active, styles.like)} />
-        ) : (
-          <Like className={classNames(styles.notActive, styles.like)} />
-        )}
+        <Like
+          className={classNames(
+            isItemsInGoods ? styles.active : styles.notActive,
+            styles.like
+          )}
+        />
       </button>
     </>
   )

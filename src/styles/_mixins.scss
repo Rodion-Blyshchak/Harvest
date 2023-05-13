@@ -1,9 +1,9 @@
 @use 'sass:math';
 
-// @function rem($px) {
-//   $result: math.div($px, 16) + rem;
-//   @return $result;
-// }
+ @function rem($px) {
+   $result: math.div($px, 16) + rem;
+   @return $result;
+ }
 
 // @function adaptive-value(
 //   $startSize,
