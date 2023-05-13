@@ -14,7 +14,7 @@ const GalleryModalContent = ({ activeModalContent }) => {
             className="flex gap-2"
           >
             <User />
-            <p className={styles.user}>@harvest_ua</p>
+            <p className="font-semibold text-xs tracking-[2px]">@harvest_ua</p>
           </Link>
           <p className={styles.description}>{activeModalContent.description}</p>
         </div>

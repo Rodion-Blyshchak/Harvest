@@ -6,12 +6,12 @@ import Button from '../../../ui/Button/Button'
 import Modal from '../../../ui/Modal/Modal'
 
 const Mailing = () => {
-  const [email, setEmail] = useState([])
+  const [email, setEmail] = useState('')
   const [value, setValue] = useState('')
   const [activeModal, setActiveModal] = useState(false)
 
   const addEmail = (newTodo) => {
-    setEmail((prev) => [...prev, newTodo])
+    setEmail(() => newTodo)
   }
 
   const addValue = (addNew) => {
@@ -30,8 +30,6 @@ const Mailing = () => {
       setActiveModal(true)
     }
   }
-
-  console.log(email)
 
   return (
     <div className={styles.mailing}>

@@ -8,6 +8,10 @@
   line-height: 16px;
   text-transform: uppercase;
   border-radius: var(--border-radius-default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 
   &__white {
     background: var(--white);

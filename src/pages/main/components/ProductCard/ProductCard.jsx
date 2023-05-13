@@ -4,32 +4,32 @@ import styles from './ProductCard.module.scss'
 import useAdaptive from '../../../../hooks/useAdaptive'
 
 const ProductCard = ({ isImageFirst, image, title, link }) => {
-  const adaptive = useAdaptive()
+  const isMobile = useAdaptive()
 
-  return adaptive ? (
-    <></>
-  ) : (
-    <Link to={link}>
-      <div className={styles.product}>
-        <img src={image} alt={image} />
-        <div
-          className={styles.content}
-          style={{
-            gridRow: isImageFirst ? 1 : 0,
-            textAlign: isImageFirst ? 'end' : 'start',
-          }}
-        >
-          <p className="text-lg">{title}</p>
+  return (
+    !isMobile && (
+      <Link to={link}>
+        <div className={styles.product}>
+          <img src={image} alt="Procut img" />
           <div
+            className={styles.content}
             style={{
+              gridRow: isImageFirst ? 1 : 0,
               textAlign: isImageFirst ? 'end' : 'start',
             }}
           >
-            <Button>Перейти</Button>
+            <p className="text-lg">{title}</p>
+            <div
+              style={{
+                textAlign: isImageFirst ? 'end' : 'start',
+              }}
+            >
+              <Button>Перейти</Button>
+            </div>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    )
   )
 }
 

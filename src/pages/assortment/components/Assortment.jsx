@@ -1,17 +1,17 @@
 import { useState } from 'react'
-import useFetchData from '../../../hooks/useFetchData'
-import styles from './Assortment.module.scss'
+import useGetFUCKINGProducts from '../../../hooks/useFetchData'
+import ScrollTop from '../../../ui/ScrollTop/ScrollTop'
 import AssortmentColumnSize from './AssortmentColumnSize/AssortmentColumnSize'
 import AssortmentFilters from './AssortmentFilters/AssortmentFilters'
 import AssortmentLIstFilling from './AssortmentLIstFilling/AssortmentLIstFilling'
-import ScrollTop from '../../../ui/ScrollTop/ScrollTop'
-import IsLoading from '../../../ui/IsLoading/IsLoading'
+// import IsLoading from '../../../ui/IsLoading/IsLoading' TODO add loading on page
+import styles from './Assortment.module.scss'
 
 const Assortment = () => {
   const [columnSize, setColumnSize] = useState(false)
-  const { stateData, setStateData, isLoading } = useFetchData(
+  const { stateData, setStateData, isLoading } = useGetFUCKINGProducts(
     'https://jsonplaceholder.typicode.com/photos'
-  ) //? Як відловити тут загрузку isLoading
+  ) //? Як відловити тут завантаження isLoading
 
   return (
     <>

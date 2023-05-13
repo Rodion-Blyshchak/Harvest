@@ -9,7 +9,7 @@ const Modal = ({ children, activeModal, setActiveModal }) => {
     <div onClick={() => setActiveModal(false)} className={styles.modal}>
       <div
         onClick={(event) => event.stopPropagation()}
-        className={styles.modalContent}
+        className={styles.content}
       >
         {children}
       </div>
