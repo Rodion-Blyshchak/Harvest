@@ -3,9 +3,9 @@ import HeaderDesktop from './HeaderDesktop/HeaderDesktop'
 import HeaderMobile from './HeaderMobile/HeaderMobile'
 
 const Header = () => {
-  const adaptive = useAdaptive()
+  const isMobile = useAdaptive()
 
-  return adaptive ? <HeaderMobile /> : <HeaderDesktop />
+  return isMobile ? <HeaderMobile /> : <HeaderDesktop />
 }
 
 export default Header

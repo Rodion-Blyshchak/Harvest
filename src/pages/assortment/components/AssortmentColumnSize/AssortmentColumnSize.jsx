@@ -7,11 +7,11 @@ import ColumnSize3 from '../../../../assets/icons/ColumnSize/ColumnSize3'
 import ColumnSize4 from '../../../../assets/icons/ColumnSize/ColumnSize4'
 
 const AssortmentColumnSize = ({ columnSize, setColumnSize }) => {
-  const adaptive = useAdaptive()
+  const isMobile = useAdaptive()
 
   return (
     <div className={styles.columnSizeButton}>
-      {adaptive ? (
+      {isMobile ? (
         <>
           <button
             onClick={() => setColumnSize(true)}

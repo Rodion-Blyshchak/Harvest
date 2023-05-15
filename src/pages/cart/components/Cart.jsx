@@ -5,13 +5,13 @@ import useAdaptive from '../../../hooks/useAdaptive'
 import classNames from 'classnames'
 
 const Cart = () => {
-  const adaptive = useAdaptive()
+  const isMobile = useAdaptive()
 
   return (
     <section className="py-8">
       <div
         className={classNames(
-          adaptive ? '_container' : '_container flex gap-9 justify-between'
+          isMobile ? '_container' : '_container flex gap-9 justify-between'
         )}
       >
         <CartListFilling />

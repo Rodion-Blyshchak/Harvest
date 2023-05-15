@@ -5,12 +5,12 @@ import styles from './ProductItemContent.module.scss'
 import AddCart from '../../../../ui/AddCart/AddCart'
 
 const ProductItemContent = ({ getData }) => {
-  const adaptive = useAdaptive()
+  const isMobile = useAdaptive()
 
   return (
     <div
       className={classNames(
-        adaptive
+        isMobile
           ? 'flex flex-col gap-4 justify-between py-12 px-4'
           : 'flex gap-4 justify-between py-12 px-4'
       )}
@@ -18,9 +18,9 @@ const ProductItemContent = ({ getData }) => {
       <img
         src={getData.thumbnailUrl}
         alt={getData.id}
-        className={classNames(adaptive ? 'w-full' : 'w-3/5')}
+        className={classNames(isMobile ? 'w-full' : 'w-3/5')}
       />
-      <div className={classNames(adaptive ? 'w-full' : 'w-2/5')}>
+      <div className={classNames(isMobile ? 'w-full' : 'w-2/5')}>
         <p className={styles.title}>{getData.title}</p>
         <div className="flex flex-wrap gap-1 py-8 items-center justify-between">
           <p className={styles.price}>{getData.id} грн</p>

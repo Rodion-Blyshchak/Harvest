@@ -4,9 +4,9 @@ import styles from './ProductCard.module.scss'
 import useAdaptive from '../../../../hooks/useAdaptive'
 
 const ProductCard = ({ isImageFirst, image, title, link }) => {
-  const adaptive = useAdaptive()
+  const isMobile = useAdaptive()
 
-  return adaptive ? (
+  return isMobile ? (
     <></>
   ) : (
     <Link to={link}>

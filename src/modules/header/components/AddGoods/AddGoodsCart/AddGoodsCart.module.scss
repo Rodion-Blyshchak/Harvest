@@ -1,14 +1,10 @@
-.cart {
-  fill: var(--white);
-
-  &Span {
-    position: absolute;
-    top: -20%;
-    right: -50%;
-    color: var(--black);
-    background: var(--white);
-    padding: 2px;
-    font-size: 12px;
-    border-radius: 50px;
-  }
+.cartSpan {
+  position: absolute;
+  top: -20%;
+  right: -50%;
+  color: var(--black);
+  background: var(--white);
+  padding: 2px;
+  font-size: 12px;
+  border-radius: 50px;
 }

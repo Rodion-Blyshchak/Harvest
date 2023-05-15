@@ -5,7 +5,7 @@ import AssortmentColumnSize from './AssortmentColumnSize/AssortmentColumnSize'
 import AssortmentFilters from './AssortmentFilters/AssortmentFilters'
 import AssortmentLIstFilling from './AssortmentLIstFilling/AssortmentLIstFilling'
 import ScrollTop from '../../../ui/ScrollTop/ScrollTop'
-import IsLoading from '../../../ui/IsLoading/IsLoading'
+// import IsLoading from '../../../ui/IsLoading/IsLoading'
 
 const Assortment = () => {
   const [columnSize, setColumnSize] = useState(false)
