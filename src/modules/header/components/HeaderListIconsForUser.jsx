@@ -17,7 +17,7 @@ const HeaderListIconsForUser = ({ filter, className }) => {
         </li>
       ))}
       <li>
-        <AddGoodsCart />
+        <AddGoodsCart styleFill="fill-white" />
       </li>
       <li>
         <AddGoodsLikes />

@@ -3,7 +3,7 @@ import styles from './HeaderDesktopMain.module.scss'
 import HeaderDesktopMenu from './HeaderDesktopMenu'
 import { Link } from 'react-router-dom'
 import Logo from '../../../../../assets/icons/Logo/Logo'
-import Cart from '../../../../../assets/icons/Header/Cart'
+import AddGoodsCart from '../../AddGoods/AddGoodsCart/AddGoodsCart'
 
 const HeaderDesktopMainFixed = () => {
   return (
@@ -14,7 +14,7 @@ const HeaderDesktopMainFixed = () => {
         </Link>
         <HeaderDesktopMenu />
         <Link to="/cart">
-          <Cart />
+          <AddGoodsCart styleFill="fill-black" />
         </Link>
       </div>
     </div>
