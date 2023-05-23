@@ -32,14 +32,12 @@
 }
 
 .item {
-  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 10px;
   position: relative;
   cursor: pointer;
   height: 100%;
-  min-height: 450px;
 
   &Title {
     font-weight: 400;
@@ -54,6 +52,7 @@
     font-size: 16px;
     line-height: 17px;
     color: var(--black-dark);
+    padding-bottom: 10px;
   }
 
   &:hover {
@@ -89,7 +88,7 @@
   gap: 20px;
   justify-content: flex-end;
   background: var(--white-dark);
-  padding: 10px 30px 10px 0;
+  padding: 10px 16px 10px 0;
   margin-bottom: 20px;
 }
 
@@ -109,7 +108,7 @@
 
 .buttonBurger {
   text-align: end;
-  margin: 0 30px 20px 10px;
+  margin: 0 0 20px 10px;
   display: none;
   @media (max-width: 768px) {
     display: block;

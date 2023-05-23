@@ -15,7 +15,11 @@ const useAddAndRemoveGoods = (goodsDataItem, fieldName) => {
     }
   }
 
-  return { isItemsInGoods, handleClick }
+  const removeItem = (id) => {
+    dispatch(removeItemInGoods({ id: id, fieldName }))
+  }
+
+  return { isItemsInGoods, handleClick, removeItem }
 }
 
 export default useAddAndRemoveGoods

@@ -17,6 +17,7 @@ const AddGoodsLikes = () => {
         <AddGoodsLikesModalContent
           goodsItem={goodsItem}
           totalPrice={totalPrice}
+          setActiveModal={setActiveModal}
         />
       </Modal>
     </>
