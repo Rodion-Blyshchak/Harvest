@@ -16,7 +16,7 @@ const HeaderBurgerContent = () => {
       <ul>
         {HeaderMenuList.map((menuItem) => (
           <li key={menuItem.id} className={styles.menuList}>
-            <Link to={menuItem.link}>
+            <Link to={menuItem.link} className="py-4 px-5 flex">
               {menuItem.title && <p>{menuItem.title}</p>}
               {menuItem.titleVariable && (
                 <p className="color-red">{menuItem.titleVariable}</p>
@@ -26,7 +26,7 @@ const HeaderBurgerContent = () => {
         ))}
       </ul>
       <ul className="p-5">
-        <li className="mb-3">
+        <li>
           <Link
             to="https://www.linkedin.com/in/rodion-blyshchak-9a5aab264/"
             className="flex items-center gap-2"
@@ -35,7 +35,7 @@ const HeaderBurgerContent = () => {
             <p className="text-sm">+38 063 858 5411</p>
           </Link>
         </li>
-        <li className="mb-3">
+        <li className="my-3">
           <Link
             to="https://www.linkedin.com/in/rodion-blyshchak-9a5aab264/"
             className="flex items-center gap-2"

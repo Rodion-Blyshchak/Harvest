@@ -12,10 +12,13 @@
   justify-content: center;
   @include blur-softer;
   background: var(--black-opacity);
+  cursor: pointer;
 
-  &Content {
+  &__content {
     background: var(--body-background);
     border-radius: var(--border-radius-default);
     margin: 16px;
+    max-height: 80vh;
+    overflow: auto;
   }
 }

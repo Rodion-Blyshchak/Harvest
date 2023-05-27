@@ -1,15 +1,11 @@
 import styles from '../Assortment.module.scss'
 import Button from '../../../../ui/Button/Button'
-import { useState } from 'react'
 import AssortmentFiltersSelect from './AssortmentFiltersSelect'
 import Burger from '../../../../ui/Burger/Burger'
+import useAddBodyClassNameLock from '../../../../hooks/useAddBodyClassNameLock'
 
 const AssortmentFilters = ({ stateData, setStateData }) => {
-  const [isBurger, setIsBurger] = useState(false)
-
-  const burgerActive = () => {
-    setIsBurger(true)
-  }
+  const { isLock, setIsLock } = useAddBodyClassNameLock()
 
   return (
     <>
@@ -19,11 +15,11 @@ const AssortmentFilters = ({ stateData, setStateData }) => {
         setStateData={setStateData}
       />
       <div className={styles.buttonBurger}>
-        <Button buttonType="white" onClick={() => burgerActive()}>
+        <Button buttonType="white" onClick={() => setIsLock(true)}>
           ФІЛЬТРАЦІЯ
         </Button>
       </div>
-      <Burger isBurger={isBurger} setIsBurger={setIsBurger}>
+      <Burger isBurger={isLock} setIsBurger={setIsLock}>
         <AssortmentFiltersSelect
           stateData={stateData}
           setStateData={setStateData}

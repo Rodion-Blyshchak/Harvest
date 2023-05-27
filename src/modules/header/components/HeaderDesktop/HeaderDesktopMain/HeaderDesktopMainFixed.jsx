@@ -13,9 +13,7 @@ const HeaderDesktopMainFixed = () => {
           <Logo />
         </Link>
         <HeaderDesktopMenu />
-        <Link to="/cart">
-          <AddGoodsCart styleFill="fill-black" />
-        </Link>
+        <AddGoodsCart styleFill="fill-black" />
       </div>
     </div>
   )

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import useFetchData from '../../../hooks/useFetchData'
 import styles from './Assortment.module.scss'
 import AssortmentColumnSize from './AssortmentColumnSize/AssortmentColumnSize'

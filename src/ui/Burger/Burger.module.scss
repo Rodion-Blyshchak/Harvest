@@ -10,9 +10,10 @@
   background: var(--black-opacity);
   @include blur-softer;
 
-  &Content {
+  &__content {
     width: 60%;
     height: 100vh;
+    overflow: auto;
     background: var(--body-background);
   }
 }

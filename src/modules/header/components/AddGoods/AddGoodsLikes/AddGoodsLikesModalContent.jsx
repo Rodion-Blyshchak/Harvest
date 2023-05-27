@@ -9,7 +9,7 @@ const AddGoodsLikesModalContent = ({
   setActiveModal,
 }) => {
   return (
-    <div className="p-5">
+    <div className="m-5 overflow-hidden">
       <ul>
         {goodsItem.length > 0 ? (
           goodsItem.map((data) => (

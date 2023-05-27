@@ -38,6 +38,9 @@
   position: relative;
   cursor: pointer;
   height: 100%;
+  @media (min-width: 2200px) {
+    height: fit-content;
+  }
 
   &Title {
     font-weight: 400;
