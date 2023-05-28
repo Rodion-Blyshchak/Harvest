@@ -8,6 +8,7 @@ import { Cart } from './pages/cart'
 import { Novelty } from './pages/novelty'
 import { Shops } from './pages/shops'
 import { About } from './pages/about'
+import Dev from './pages/dev'
 
 console.log('Робота є не закінчена та постійно вносяться вправки і доповлення.')
 
@@ -23,6 +24,7 @@ const App = () => (
         <Route path="/new" element={<Novelty />} />
         <Route path="/shops" element={<Shops />} />
         <Route path="/about" element={<About />} />
+        <Route path="/dev" element={<Dev />} />
       </Routes>
     </main>
     <Footer />
