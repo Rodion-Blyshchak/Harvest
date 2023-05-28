@@ -4,14 +4,20 @@ import { Link } from 'react-router-dom'
 import styles from './HeaderDesktopMain.module.scss'
 import HeaderModal from './HeaderModal/HeaderModal'
 import HeaderModalContent from './HeaderModal/HeaderModalContent'
+import { AnimatePresence } from 'framer-motion'
 
 const HeaderDesktopMenu = () => {
   const [isModal, setIsModal] = useState(false)
   const [activeMenuItem, setActiveMenuItem] = useState(null)
 
   const modal = (active) => {
-    setActiveMenuItem(active)
-    setIsModal(true)
+    if (active.dropdown) {
+      setActiveMenuItem(active.dropdown)
+      setIsModal(true)
+    } else if (isModal) {
+      setActiveMenuItem(null)
+      setIsModal(false)
+    }
   }
 
   return (
@@ -37,9 +43,11 @@ const HeaderDesktopMenu = () => {
         ))}
       </ul>
       <HeaderModal isModal={isModal} setIsModal={setIsModal}>
-        {activeMenuItem && (
-          <HeaderModalContent activeMenuItem={activeMenuItem} />
-        )}
+        <AnimatePresence mode="wait">
+          {activeMenuItem && (
+            <HeaderModalContent dropdownList={activeMenuItem} />
+          )}
+        </AnimatePresence>
       </HeaderModal>
     </div>
   )
