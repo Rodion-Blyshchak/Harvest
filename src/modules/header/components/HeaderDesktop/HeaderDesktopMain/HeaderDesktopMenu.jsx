@@ -5,18 +5,19 @@ import styles from './HeaderDesktopMain.module.scss'
 import HeaderModal from './HeaderModal/HeaderModal'
 import HeaderModalContent from './HeaderModal/HeaderModalContent'
 import { AnimatePresence } from 'framer-motion'
+import useAddBodyClassNameLock from '../../../../../hooks/useAddBodyClassNameLock'
 
 const HeaderDesktopMenu = () => {
-  const [isModal, setIsModal] = useState(false)
   const [activeMenuItem, setActiveMenuItem] = useState(null)
+  const { isLock, setIsLock } = useAddBodyClassNameLock()
 
   const modal = (active) => {
     if (active.dropdown) {
       setActiveMenuItem(active.dropdown)
-      setIsModal(true)
-    } else if (isModal) {
+      setIsLock(true)
+    } else if (isLock) {
       setActiveMenuItem(null)
-      setIsModal(false)
+      setIsLock(false)
     }
   }
 
@@ -42,7 +43,7 @@ const HeaderDesktopMenu = () => {
           </li>
         ))}
       </ul>
-      <HeaderModal isModal={isModal} setIsModal={setIsModal}>
+      <HeaderModal isModal={isLock} setIsModal={setIsLock}>
         <AnimatePresence mode="wait">
           {activeMenuItem && (
             <HeaderModalContent dropdownList={activeMenuItem} />
