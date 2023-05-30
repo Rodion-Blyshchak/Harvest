@@ -7,7 +7,7 @@ import AddGoodsCart from '../../AddGoods/AddGoodsCart/AddGoodsCart'
 
 const HeaderDesktopMainFixed = () => {
   return (
-    <div className={styles.header}>
+    <div className={classNames(styles.header, styles.headerBorder)}>
       <div className={classNames(styles.bodyFixed, '_container')}>
         <Link to="/">
           <Logo />
