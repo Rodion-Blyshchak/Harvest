@@ -9,8 +9,6 @@ import { Novelty } from './pages/novelty'
 import { Shops } from './pages/shops'
 import { About } from './pages/about'
 
-console.log('Робота є не закінчена та постійно вносяться вправки і доповлення.')
-
 const App = () => (
   <>
     <Header />
