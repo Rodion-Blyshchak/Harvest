@@ -2,23 +2,23 @@ import AddGoodsLikesModalContent from './AddGoodsLikesModalContent'
 import Modal from '../../../../../ui/Modal/Modal'
 import AddGoodsLikesLength from './AddGoodsLikesLength'
 import useTotal from '../../../../../hooks/useTotal'
-import useAddBodyClassNameLock from '../../../../../hooks/useAddBodyClassNameLock'
+import useModals from '../../../../../hooks/useModals'
 
 const AddGoodsLikes = () => {
   const { goodsItem, totalPrice } = useTotal('itemsInGoods')
 
-  const { isLock, setIsLock } = useAddBodyClassNameLock()
+  const { isShowModal, onOpenModal, onCloseModal } = useModals()
 
   return (
     <>
-      <button onClick={() => setIsLock(true)}>
+      <button onClick={onOpenModal}>
         <AddGoodsLikesLength goodsLength={goodsItem.length} />
       </button>
-      <Modal activeModal={isLock} setActiveModal={setIsLock}>
+      <Modal isOpen={isShowModal} onClose={() => onCloseModal()}>
         <AddGoodsLikesModalContent
           goodsItem={goodsItem}
           totalPrice={totalPrice}
-          setActiveModal={setIsLock}
+          onClose={() => onCloseModal()}
         />
       </Modal>
     </>

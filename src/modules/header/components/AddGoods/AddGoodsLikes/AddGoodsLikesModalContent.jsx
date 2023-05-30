@@ -3,11 +3,7 @@ import Button from '../../../../../ui/Button/Button'
 import classNames from 'classnames'
 import { Link } from 'react-router-dom'
 
-const AddGoodsLikesModalContent = ({
-  goodsItem,
-  totalPrice,
-  setActiveModal,
-}) => {
+const AddGoodsLikesModalContent = ({ goodsItem, totalPrice, onClose }) => {
   return (
     <div className="m-5 overflow-hidden">
       <ul>
@@ -19,7 +15,7 @@ const AddGoodsLikesModalContent = ({
                   pathname: '/assortment/item',
                   search: `?id=${data.id}`,
                 }}
-                onClick={() => setActiveModal(false)}
+                onClick={() => onClose}
                 className="flex gap-3 pb-5"
               >
                 <img

@@ -3,14 +3,15 @@ import { GalleryListCards } from '../../../../consts/Main/Gallery/GalleryListCar
 import styles from './Gallery.module.scss'
 import Modal from '../../../../ui/Modal/Modal'
 import GalleryModalContent from './GalleryModalContent'
+import useModals from '../../../../hooks/useModals.js'
 
 const GalleryList = () => {
-  const [activeModal, setActiveModal] = useState(false)
   const [activeModalContent, setActiveModalContent] = useState(null)
+  const { isShowModal, onOpenModal, onCloseModal } = useModals()
 
   const modal = (active) => {
     setActiveModalContent(active)
-    setActiveModal(true)
+    onOpenModal()
   }
 
   return (
@@ -27,7 +28,7 @@ const GalleryList = () => {
           </li>
         ))}
       </ul>
-      <Modal activeModal={activeModal} setActiveModal={setActiveModal}>
+      <Modal isOpen={isShowModal} onClose={() => onCloseModal()}>
         <GalleryModalContent activeModalContent={activeModalContent} />
       </Modal>
     </>

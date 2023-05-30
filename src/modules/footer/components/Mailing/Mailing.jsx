@@ -4,11 +4,12 @@ import classNames from 'classnames'
 import Input from '../../../../ui/Input/Input'
 import Button from '../../../../ui/Button/Button'
 import Modal from '../../../../ui/Modal/Modal'
+import useModals from '../../../../hooks/useModals'
 
 const Mailing = () => {
   const [email, setEmail] = useState('')
   const [value, setValue] = useState('')
-  const [activeModal, setActiveModal] = useState(false)
+  const { isShowModal, onOpenModal, onCloseModal } = useModals()
 
   const addEmail = (newTodo) => {
     setEmail(() => newTodo)
@@ -27,7 +28,7 @@ const Mailing = () => {
 
       setValue(() => '')
 
-      setActiveModal(true)
+      onOpenModal()
     }
   }
 
@@ -51,7 +52,7 @@ const Mailing = () => {
         <Button onClick={addTodoHandler} buttonType="grey">
           Підписатися
         </Button>
-        <Modal activeModal={activeModal} setActiveModal={setActiveModal}>
+        <Modal isOpen={isShowModal} onClose={() => onCloseModal()}>
           <div className={styles.modal}>
             <p className={styles.modalTitle}>
               Ви успішно підписалиля на нашу розсилку!

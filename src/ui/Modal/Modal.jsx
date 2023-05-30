@@ -1,18 +1,24 @@
+import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import styles from './Modal.module.scss'
 import classNames from 'classnames'
+import styles from './Modal.module.scss'
 
-const Modal = ({ children, activeModal, setActiveModal }) => {
-  if (!activeModal) {
-    return
-  }
+const Modal = ({ children, isOpen, onClose }) => {
+  useEffect(() => {
+    const { body } = document
+    if (isOpen) {
+      body.classList.add('lock')
+    } else {
+      body.classList.remove('lock')
+    }
+  }, [isOpen])
 
   return (
     <AnimatePresence>
-      {activeModal && (
+      {isOpen && (
         <>
           <motion.div
-            onClick={() => setActiveModal(false)}
+            onClick={onClose}
             className={styles.modal}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
