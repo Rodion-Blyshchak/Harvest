@@ -46,7 +46,10 @@ const HeaderDesktopMenu = () => {
       <HeaderModal isModal={isLock} setIsModal={setIsLock}>
         <AnimatePresence mode="wait">
           {activeMenuItem && (
-            <HeaderModalContent dropdownList={activeMenuItem} />
+            <HeaderModalContent
+              dropdownList={activeMenuItem}
+              setIsLoc={setIsLock}
+            />
           )}
         </AnimatePresence>
       </HeaderModal>

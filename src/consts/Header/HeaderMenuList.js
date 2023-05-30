@@ -13,36 +13,94 @@ export const HeaderMenuList = [
     link: '/assortment',
     dropdown: [
       {
-        title: 'СУМКИ',
-        links: [
+        title: 'Рюкзаки',
+        linkTitle: '/assortment',
+        submenu: [
           {
-            title: 'КОСТЮМИ',
-            link: '/1',
+            name: 'Жіночі рюкзаки',
+            linkSubmenu: '/assortment',
           },
           {
-            title: 'КУРТКИ ТА ЖИЛЕТИ',
-            link: '/2',
+            name: 'Чоловічі рюкзаки',
+            linkSubmenu: '/assortment',
           },
           {
-            title: 'ЛЬОН',
-            link: '/3',
+            name: 'Унісекс рюкзаки',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Дитячі рюкзаки',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Тактичні рюкзаки',
+            linkSubmenu: '/assortment',
           },
         ],
       },
       {
-        title: 'ІНШЕ',
-        links: [
+        title: 'Сумки',
+        linkTitle: '/assortment',
+        submenu: [
           {
-            title: 'КОСТЮМИ',
-            link: '/1',
+            name: 'Сумки жіночі',
+            linkSubmenu: '/assortment',
           },
           {
-            title: 'КУРТКИ ТА ЖИЛЕТИ',
-            link: '/2',
+            name: 'Сумки чоловічі',
+            linkSubmenu: '/assortment',
           },
           {
-            title: 'ЛЬОН',
-            link: '/3',
+            name: 'Поясні сунки',
+            linkSubmenu: '/assortment',
+          },
+        ],
+      },
+      {
+        title: 'Інше',
+        linkTitle: '/assortment',
+        submenu: [
+          {
+            name: 'Аксисуари для рюкзаків',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Жіночі портмоне',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Чоловічі портмоне',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Чохли для ноутбуків',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Подарункові сертифікати',
+            linkSubmenu: '/assortment',
+          },
+        ],
+      },
+      {
+        title: 'Колекції',
+        linkTitle: '/assortment',
+        submenu: [
+          {
+            name: 'Active',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Classic',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Shuttle',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Vintage',
+            linkSubmenu: '/assortment',
           },
         ],
       },
@@ -55,36 +113,108 @@ export const HeaderMenuList = [
     link: '/assortment',
     dropdown: [
       {
-        title: 'ЧОЛОВІКАМ',
-        links: [
+        title: 'Жінкам',
+        linkTitle: '/assortment',
+        submenu: [
           {
-            title: 'КОСТЮМИ',
-            link: '/1',
+            name: 'Harvest x nu ot',
+            linkSubmenu: '/assortment',
           },
           {
-            title: 'КУРТКИ ТА ЖИЛЕТИ',
-            link: '/2',
+            name: 'Костюми',
+            linkSubmenu: '/assortment',
           },
           {
-            title: 'ЛЬОН',
-            link: '/3',
+            name: 'Куртки та жилети',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Льон',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Сукні',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Футболки і топи',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Худі та світшоти',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Шорти та спідниці',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Штани',
+            linkSubmenu: '/assortment',
           },
         ],
       },
       {
-        title: 'ЧОЛОВІКАМ',
-        links: [
+        title: 'Чоловікам',
+        linkTitle: '/assortment',
+        submenu: [
           {
-            title: 'КОСТЮМИ',
-            link: '/1',
+            name: 'Костюми',
+            linkSubmenu: '/assortment',
           },
           {
-            title: 'КУРТКИ ТА ЖИЛЕТИ',
-            link: '/2',
+            name: 'Куртки та жилети',
+            linkSubmenu: '/assortment',
           },
           {
-            title: 'ЛЬОН',
-            link: '/3',
+            name: 'Льон',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Футболки',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Худі та світшоти',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Шорти',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Штани',
+            linkSubmenu: '/assortment',
+          },
+        ],
+      },
+      {
+        title: 'Дітям',
+        linkTitle: '/assortment',
+        submenu: [
+          {
+            name: 'Костюми',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Куртки',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Футболки',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Худі та світшоти',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Шорти',
+            linkSubmenu: '/assortment',
+          },
+          {
+            name: 'Штани',
+            linkSubmenu: '/assortment',
           },
         ],
       },
@@ -100,6 +230,28 @@ export const HeaderMenuList = [
     title: 'Про нас',
     later: <Later />,
     link: '/about',
+    dropdown: [
+      {
+        title: 'Про бренд',
+        linkTitle: '/',
+        submenu: [],
+      },
+      {
+        title: 'Наші цінності',
+        linkTitle: '/',
+        submenu: [],
+      },
+      {
+        title: 'Виробництво',
+        linkTitle: '/',
+        submenu: [],
+      },
+      {
+        title: 'Блог',
+        linkTitle: '/',
+        submenu: [],
+      },
+    ],
   },
   {
     id: 6,
