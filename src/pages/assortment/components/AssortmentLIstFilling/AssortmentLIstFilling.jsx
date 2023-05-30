@@ -30,13 +30,7 @@ const AssortmentLIstFilling = ({ stateData, columnSize }) => {
               alt={dataItem.id}
               className="h-3/4"
             />
-            <div
-              className={classNames(
-                isMobile && columnSize
-                  ? 'h-fit'
-                  : 'flex flex-col gap-2.5 justify-between h-full'
-              )}
-            >
+            <div className="flex flex-col gap-2.5 justify-between h-3/4">
               <p className={styles.itemTitle}>{dataItem.title}</p>
               <div>
                 <p className={styles.itemPrice}>{dataItem.id} грн</p>
