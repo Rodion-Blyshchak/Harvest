@@ -1,9 +1,9 @@
-import classNames from 'classnames'
-import styles from './CartListFilling.module.scss'
 import { Link } from 'react-router-dom'
-import useTotal from '../../../../hooks/useTotal'
 import useAddAndRemoveGoods from '../../../../hooks/useAddAndRemoveGoods'
+import useTotal from '../../../../hooks/useTotal'
+import classNames from 'classnames'
 import Delete from '../../../../assets/icons/ui/Delete'
+import styles from './CartListFilling.module.scss'
 
 const CartListFilling = () => {
   const { goodsItem } = useTotal('itemsInGoodsCart')

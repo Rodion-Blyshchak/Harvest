@@ -1,10 +1,10 @@
+import { HeaderMenuList } from '../../../../consts/Header/HeaderMenuList'
 import { Link } from 'react-router-dom'
 import Search from '../../../../assets/icons/Header/Search'
-import styles from './HeaderMobile.module.scss'
-import { HeaderMenuList } from '../../../../consts/Header/HeaderMenuList'
 import Message from '../../../../assets/icons/Header/Message'
 import Phone from '../../../../assets/icons/Header/Phone'
 import Clock from '../../../../assets/icons/Header/Clock'
+import styles from './HeaderMobile.module.scss'
 
 const HeaderBurgerContent = () => {
   return (

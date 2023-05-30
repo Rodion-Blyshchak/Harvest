@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
 import { UnitGoodsCardList } from '../../../../../consts/Main/Banner/UnitGoodsCardList'
+import { Link } from 'react-router-dom'
 import Button from '../../../../../ui/Button/Button'
 import styles from './UnitGoodsCard.module.scss'
 

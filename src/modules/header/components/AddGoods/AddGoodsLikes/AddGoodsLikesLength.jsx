@@ -1,7 +1,7 @@
+import useAdaptive from '../../../../../hooks/useAdaptive'
 import classNames from 'classnames'
 import Likes from '../../../../../assets/icons/Header/Likes'
 import styles from './AddGoodsLikes.module.scss'
-import useAdaptive from '../../../../../hooks/useAdaptive'
 
 const AddGoodsLikesLength = ({ goodsLength }) => {
   const isMobile = useAdaptive()

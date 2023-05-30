@@ -1,6 +1,6 @@
 import classNames from 'classnames'
-import styles from './About.module.scss'
 import AboutList from './AboutList'
+import styles from './About.module.scss'
 
 const About = () => {
   return (

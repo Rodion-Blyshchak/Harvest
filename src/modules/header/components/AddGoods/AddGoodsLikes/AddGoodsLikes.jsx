@@ -1,8 +1,8 @@
-import AddGoodsLikesModalContent from './AddGoodsLikesModalContent'
-import Modal from '../../../../../ui/Modal/Modal'
-import AddGoodsLikesLength from './AddGoodsLikesLength'
-import useTotal from '../../../../../hooks/useTotal'
 import useModals from '../../../../../hooks/useModals'
+import useTotal from '../../../../../hooks/useTotal'
+import AddGoodsLikesModalContent from './AddGoodsLikesModalContent'
+import AddGoodsLikesLength from './AddGoodsLikesLength'
+import Modal from '../../../../../ui/Modal/Modal'
 
 const AddGoodsLikes = () => {
   const { goodsItem, totalPrice } = useTotal('itemsInGoods')

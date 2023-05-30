@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { GalleryListCards } from '../../../../consts/Main/Gallery/GalleryListCards'
-import styles from './Gallery.module.scss'
-import Modal from '../../../../ui/Modal/Modal'
-import GalleryModalContent from './GalleryModalContent'
 import useModals from '../../../../hooks/useModals.js'
+import GalleryModalContent from './GalleryModalContent'
+import Modal from '../../../../ui/Modal/Modal'
+import styles from './Gallery.module.scss'
 
 const GalleryList = () => {
   const [activeModalContent, setActiveModalContent] = useState(null)

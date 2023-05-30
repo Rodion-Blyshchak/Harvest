@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import styles from '../Assortment.module.scss'
+import useAdaptive from '../../../../hooks/useAdaptive'
 import classNames from 'classnames'
 import AddLikes from '../../../../ui/AddLikes/AddLikes'
 import Button from '../../../../ui/Button/Button'
 import Look from '../../../../assets/icons/ui/Look'
-import useAdaptive from '../../../../hooks/useAdaptive'
+import styles from '../Assortment.module.scss'
 
 const AssortmentLIstFilling = ({ stateData, columnSize }) => {
   const isMobile = useAdaptive()

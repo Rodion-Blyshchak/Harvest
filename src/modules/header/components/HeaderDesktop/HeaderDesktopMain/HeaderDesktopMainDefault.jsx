@@ -1,6 +1,6 @@
+import HeaderDesktopMenu from './HeaderDesktopMenu'
 import classNames from 'classnames'
 import styles from './HeaderDesktopMain.module.scss'
-import HeaderDesktopMenu from './HeaderDesktopMenu'
 
 const HeaderDesktopMainDefault = () => {
   return (

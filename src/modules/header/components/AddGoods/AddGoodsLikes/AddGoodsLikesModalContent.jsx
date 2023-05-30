@@ -1,7 +1,7 @@
-import styles from './AddGoodsLikes.module.scss'
-import Button from '../../../../../ui/Button/Button'
-import classNames from 'classnames'
 import { Link } from 'react-router-dom'
+import classNames from 'classnames'
+import Button from '../../../../../ui/Button/Button'
+import styles from './AddGoodsLikes.module.scss'
 
 const AddGoodsLikesModalContent = ({ goodsItem, totalPrice, onClose }) => {
   return (

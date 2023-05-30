@@ -1,13 +1,13 @@
+import { useState } from 'react'
 import {
   useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
 } from 'framer-motion'
-import styles from './ScrollTop.module.scss'
-import { useState } from 'react'
-import Arrow from '../../assets/icons/ScrollTop/Arrow'
 import Line from '../../assets/icons/ScrollTop/Line'
+import Arrow from '../../assets/icons/ScrollTop/Arrow'
+import styles from './ScrollTop.module.scss'
 
 const ScrollTop = () => {
   const { scrollY } = useScroll()

@@ -1,9 +1,9 @@
-import classNames from 'classnames'
-import styles from './HeaderDesktopMain.module.scss'
-import HeaderDesktopMenu from './HeaderDesktopMenu'
 import { Link } from 'react-router-dom'
-import Logo from '../../../../../assets/icons/Logo/Logo'
+import classNames from 'classnames'
+import HeaderDesktopMenu from './HeaderDesktopMenu'
 import AddGoodsCart from '../../AddGoods/AddGoodsCart/AddGoodsCart'
+import Logo from '../../../../../assets/icons/Logo/Logo'
+import styles from './HeaderDesktopMain.module.scss'
 
 const HeaderDesktopMainFixed = () => {
   return (

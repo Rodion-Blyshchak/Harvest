@@ -1,8 +1,8 @@
-import styles from '../Assortment.module.scss'
-import Button from '../../../../ui/Button/Button'
-import AssortmentFiltersSelect from './AssortmentFiltersSelect'
-import Burger from '../../../../ui/Burger/Burger'
 import useAddBodyClassNameLock from '../../../../hooks/useAddBodyClassNameLock'
+import AssortmentFiltersSelect from './AssortmentFiltersSelect'
+import Button from '../../../../ui/Button/Button'
+import Burger from '../../../../ui/Burger/Burger'
+import styles from '../Assortment.module.scss'
 
 const AssortmentFilters = ({ stateData, setStateData }) => {
   const { isLock, setIsLock } = useAddBodyClassNameLock()

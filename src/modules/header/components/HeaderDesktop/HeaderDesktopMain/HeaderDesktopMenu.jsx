@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { HeaderMenuList } from '../../../../../consts/Header/HeaderMenuList'
+import { AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import styles from './HeaderDesktopMain.module.scss'
+import useAddBodyClassNameLock from '../../../../../hooks/useAddBodyClassNameLock'
 import HeaderModal from './HeaderModal/HeaderModal'
 import HeaderModalContent from './HeaderModal/HeaderModalContent'
-import { AnimatePresence } from 'framer-motion'
-import useAddBodyClassNameLock from '../../../../../hooks/useAddBodyClassNameLock'
+import styles from './HeaderDesktopMain.module.scss'
 
 const HeaderDesktopMenu = () => {
   const [activeMenuItem, setActiveMenuItem] = useState(null)

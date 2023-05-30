@@ -1,8 +1,8 @@
+import useAdaptive from '../../../hooks/useAdaptive'
+import classNames from 'classnames'
 import CartListFilling from './CartLIstFilling/CartListFilling'
 import ScrollTop from '../../../ui/ScrollTop/ScrollTop'
 import CartTotalPrice from './CartTotalPrice/CartTotalPrice'
-import useAdaptive from '../../../hooks/useAdaptive'
-import classNames from 'classnames'
 
 const Cart = () => {
   const isMobile = useAdaptive()

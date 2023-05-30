@@ -1,5 +1,5 @@
-import styles from './Advantages.module.scss'
 import { AdvantagesList } from '../../../../consts/Main/Advantages/AdvantagesList'
+import styles from './Advantages.module.scss'
 
 const Advantages = () => {
   return (

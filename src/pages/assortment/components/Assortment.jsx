@@ -1,17 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import useFetchData from '../../../hooks/useFetchData'
-import styles from './Assortment.module.scss'
 import AssortmentColumnSize from './AssortmentColumnSize/AssortmentColumnSize'
 import AssortmentFilters from './AssortmentFilters/AssortmentFilters'
 import AssortmentLIstFilling from './AssortmentLIstFilling/AssortmentLIstFilling'
 import ScrollTop from '../../../ui/ScrollTop/ScrollTop'
-// import IsLoading from '../../../ui/IsLoading/IsLoading'
+import styles from './Assortment.module.scss'
 
 const Assortment = () => {
   const [columnSize, setColumnSize] = useState(false)
-  const { stateData, setStateData, isLoading } = useFetchData(
+  const { stateData, setStateData } = useFetchData(
     'https://jsonplaceholder.typicode.com/photos'
-  ) //? Як відловити тут загрузку isLoading
+  )
 
   return (
     <>

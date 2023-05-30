@@ -1,11 +1,11 @@
 import { memo, useState } from 'react'
-import HeaderDesktopMainDefault from './HeaderDesktopMainDefault'
 import {
   motion,
   useMotionValueEvent,
   useScroll,
   useTransform,
 } from 'framer-motion'
+import HeaderDesktopMainDefault from './HeaderDesktopMainDefault'
 import HeaderDesktopMainFixed from './HeaderDesktopMainFixed'
 import styles from './HeaderDesktopMain.module.scss'
 

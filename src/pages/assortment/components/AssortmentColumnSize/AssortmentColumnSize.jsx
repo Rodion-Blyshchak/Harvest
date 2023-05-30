@@ -1,10 +1,10 @@
-import classNames from 'classnames'
 import useAdaptive from '../../../../hooks/useAdaptive'
-import styles from '../Assortment.module.scss'
+import classNames from 'classnames'
 import ColumnSize1 from '../../../../assets/icons/ColumnSize/ColumnSize1'
 import ColumnSize2 from '../../../../assets/icons/ColumnSize/ColumnSize2'
 import ColumnSize3 from '../../../../assets/icons/ColumnSize/ColumnSize3'
 import ColumnSize4 from '../../../../assets/icons/ColumnSize/ColumnSize4'
+import styles from '../Assortment.module.scss'
 
 const AssortmentColumnSize = ({ columnSize, setColumnSize }) => {
   const isMobile = useAdaptive()

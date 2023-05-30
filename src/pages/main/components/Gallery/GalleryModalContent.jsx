@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
-import styles from './Gallery.module.scss'
-import User from '../../../../assets/icons/User/User'
 import { SocialNetworksIconsList } from '../../../../consts/SocialNetworks/SocialNetworksIconsList'
+import { Link } from 'react-router-dom'
+import User from '../../../../assets/icons/User/User'
+import styles from './Gallery.module.scss'
 
 const GalleryModalContent = ({ activeModalContent }) => {
   return (

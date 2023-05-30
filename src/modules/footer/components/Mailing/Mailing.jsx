@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import styles from './Mailing.module.scss'
+import useModals from '../../../../hooks/useModals'
 import classNames from 'classnames'
 import Input from '../../../../ui/Input/Input'
 import Button from '../../../../ui/Button/Button'
 import Modal from '../../../../ui/Modal/Modal'
-import useModals from '../../../../hooks/useModals'
+import styles from './Mailing.module.scss'
 
 const Mailing = () => {
   const [email, setEmail] = useState('')

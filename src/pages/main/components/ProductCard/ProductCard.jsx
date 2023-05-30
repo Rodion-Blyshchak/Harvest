@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
+import useAdaptive from '../../../../hooks/useAdaptive'
 import Button from '../../../../ui/Button/Button'
 import styles from './ProductCard.module.scss'
-import useAdaptive from '../../../../hooks/useAdaptive'
 
 const ProductCard = ({ isImageFirst, image, title, link }) => {
   const isMobile = useAdaptive()

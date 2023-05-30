@@ -1,5 +1,3 @@
-import React from 'react'
-
 const DevelopmentPage = () => {
   return (
     <div className="flex justify-center items-center">

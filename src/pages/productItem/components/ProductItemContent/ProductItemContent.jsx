@@ -1,8 +1,8 @@
-import classNames from 'classnames'
 import useAdaptive from '../../../../hooks/useAdaptive'
+import classNames from 'classnames'
 import AddLikes from '../../../../ui/AddLikes/AddLikes'
-import styles from './ProductItemContent.module.scss'
 import AddCart from '../../../../ui/AddCart/AddCart'
+import styles from './ProductItemContent.module.scss'
 
 const ProductItemContent = ({ getData }) => {
   const isMobile = useAdaptive()

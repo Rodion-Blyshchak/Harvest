@@ -1,7 +1,7 @@
+import useAddAndRemoveGoods from '../../hooks/useAddAndRemoveGoods'
+import classNames from 'classnames'
 import Like from '../../assets/icons/ui/LIke'
 import styles from './AddLikes.module.scss'
-import classNames from 'classnames'
-import useAddAndRemoveGoods from '../../hooks/useAddAndRemoveGoods'
 
 const AddLikes = ({ goodsDataItem, className }) => {
   const { isItemsInGoods, handleClick } = useAddAndRemoveGoods(

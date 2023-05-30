@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import styles from './Gallery.module.scss'
 import GalleryList from './GalleryList'
+import styles from './Gallery.module.scss'
 
 const Gallery = () => {
   return (

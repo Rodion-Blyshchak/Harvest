@@ -1,8 +1,8 @@
-import styles from './BannerDesktop.module.scss'
+import { useScroll, useTransform, motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import Image from '../../../../../assets/images/Main/Banner/BannerDesktop/banner.png'
 import Button from '../../../../../ui/Button/Button'
-import { Link } from 'react-router-dom'
-import { useScroll, useTransform, motion } from 'framer-motion'
+import styles from './BannerDesktop.module.scss'
 
 const BannerDesktop = () => {
   const { scrollY } = useScroll()

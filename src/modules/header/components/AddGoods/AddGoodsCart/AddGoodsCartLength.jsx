@@ -1,7 +1,7 @@
-import Cart from '../../../../../assets/icons/Header/Cart'
-import styles from './AddGoodsCart.module.scss'
 import useAdaptive from '../../../../../hooks/useAdaptive.js'
 import classNames from 'classnames'
+import Cart from '../../../../../assets/icons/Header/Cart'
+import styles from './AddGoodsCart.module.scss'
 
 const AddGoodsCartLength = ({ goodsLength, styleFill }) => {
   const isMobile = useAdaptive()

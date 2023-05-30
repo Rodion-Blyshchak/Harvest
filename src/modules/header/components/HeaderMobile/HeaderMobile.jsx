@@ -1,11 +1,11 @@
-import styles from './HeaderMobile.module.scss'
-import Burger from '../../../../ui/Burger/Burger'
 import { Link } from 'react-router-dom'
+import useAddBodyClassNameLock from '../../../../hooks/useAddBodyClassNameLock'
+import classNames from 'classnames'
+import Burger from '../../../../ui/Burger/Burger'
 import Logo from '../../../../assets/icons/Logo/Logo'
 import HeaderListIconsForUser from '../HeaderListIconsForUser'
-import classNames from 'classnames'
 import HeaderBurgerContent from './HeaderBurgerContent'
-import useAddBodyClassNameLock from '../../../../hooks/useAddBodyClassNameLock'
+import styles from './HeaderMobile.module.scss'
 
 const HeaderMobile = () => {
   const { isLock, setIsLock } = useAddBodyClassNameLock()

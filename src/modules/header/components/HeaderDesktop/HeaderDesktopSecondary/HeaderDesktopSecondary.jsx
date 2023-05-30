@@ -1,9 +1,9 @@
-import classNames from 'classnames'
-import styles from './HeaderDesktopSecondary.module.scss'
 import { Link } from 'react-router-dom'
+import classNames from 'classnames'
+import HeaderListIconsForUser from '../../HeaderListIconsForUser'
 import Message from '../../../../../assets/icons/Header/Message'
 import Logo from '../../../../../assets/icons/Logo/Logo'
-import HeaderListIconsForUser from '../../HeaderListIconsForUser'
+import styles from './HeaderDesktopSecondary.module.scss'
 
 const HeaderDesktopSecondary = () => {
   return (
