@@ -61,6 +61,12 @@ body {
   overflow: hidden;
   touch-action: none;
   overscroll-behavior: none;
+
+  main,
+  header,
+  footer {
+    margin-right: $widthScrollbar;
+  }
 }
 
 .scroll-bar {
