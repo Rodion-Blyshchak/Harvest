@@ -15,7 +15,7 @@ const AddGoodsLikesModalContent = ({ goodsItem, totalPrice, onClose }) => {
                   pathname: '/assortment/item',
                   search: `?id=${data.id}`,
                 }}
-                onClick={() => onClose}
+                onClick={() => onClose()}
                 className="flex gap-3 pb-5"
               >
                 <img
