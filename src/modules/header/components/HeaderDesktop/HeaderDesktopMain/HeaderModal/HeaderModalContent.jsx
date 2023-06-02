@@ -15,7 +15,9 @@ const HeaderModalContent = ({ dropdownList, setIsLock }) => {
       {dropdownList.map((dropdown, index) => (
         <div key={index}>
           <Link to={dropdown.linkTitle} onClick={() => setIsLock(false)}>
-            <p className="text-center py-1 uppercase">{dropdown.title}</p>
+            <p className="text-center py-1 text-sm uppercase">
+              {dropdown.title}
+            </p>
           </Link>
           <ul>
             {dropdown.submenu.map((linkItem, index) => (

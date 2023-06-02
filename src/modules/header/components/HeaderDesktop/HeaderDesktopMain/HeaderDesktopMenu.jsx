@@ -22,7 +22,7 @@ const HeaderDesktopMenu = () => {
   }
 
   return (
-    <div>
+    <>
       <ul className={styles.menuList}>
         {HeaderMenuList.map((menuItem) => (
           <li key={menuItem.id} className="header__text">
@@ -53,7 +53,7 @@ const HeaderDesktopMenu = () => {
           )}
         </AnimatePresence>
       </HeaderModal>
-    </div>
+    </>
   )
 }
 

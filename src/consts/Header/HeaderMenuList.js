@@ -255,6 +255,34 @@ export const HeaderMenuList = [
   },
   {
     id: 6,
+    title: 'Інформація',
+    later: <Later />,
+    link: '/about',
+    dropdown: [
+      {
+        title: 'Контакти',
+        linkTitle: '/',
+        submenu: [],
+      },
+      {
+        title: 'Оплата і доставка',
+        linkTitle: '/',
+        submenu: [],
+      },
+      {
+        title: 'Гарантія і повернення',
+        linkTitle: '/',
+        submenu: [],
+      },
+      {
+        title: 'Корпоративні та оптові замовлення',
+        linkTitle: '/',
+        submenu: [],
+      },
+    ],
+  },
+  {
+    id: 7,
     titleVariable: 'Знижки',
     link: '/assortment',
   },
