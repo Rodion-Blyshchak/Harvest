@@ -1,6 +1,6 @@
 import Banner from '../../../assets/images/Main/Banner/BannerDesktop/banner.png'
-import Backpack from '../../../assets/images/Main/Banner/UnitGoodsCard/Backpack.png'
-import Bag from '../../../assets/images/Main/Banner/UnitGoodsCard/Bag.png'
+import Roll_mini from '../../../assets/images/Main/Banner/UnitGoodsCard/ROLL_MINI.png'
+import Polly from '../../../assets/images/Main/Banner/UnitGoodsCard/POLLY.png'
 
 export const UnitGoodsCardList = [
   {
@@ -12,16 +12,16 @@ export const UnitGoodsCardList = [
   },
   {
     id: 2,
-    title: 'РЮКЗАК "SOLVER 2" ЧОРНИЙ',
+    title: 'РЮКЗАК "ROLL MINI" ПРИНТ КВІТИ',
     state: true,
-    image: Backpack,
+    image: Roll_mini,
     link: '/assortment',
   },
   {
     id: 3,
-    title: 'СУМКА "FLORIDA" ЕКОШКІРА, ЧОРНА',
+    title: 'СПІДНИЦІ "POLLY"',
     state: true,
-    image: Bag,
+    image: Polly,
     link: '/assortment',
   },
 ]

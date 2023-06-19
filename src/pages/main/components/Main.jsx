@@ -1,8 +1,8 @@
 import Advantages from './Advantages/Advantages'
 import Banner from './Banner/Banner'
 import ProductCard from './ProductCard/ProductCard'
-import Backpack from '../../../assets/images/Main/ProductCard/Backpack.png'
-import Bag from '../../../assets/images/Main/ProductCard/Bag.png'
+import roll_mini from '../../../assets/images/Main/ProductCard/ROLL_MINI.png'
+import polly from '../../../assets/images/Main/ProductCard/POLLY.png'
 import About from './About/About'
 import Gallery from './Gallery/Gallery'
 import ScrollTop from '../../../ui/ScrollTop/ScrollTop'
@@ -14,15 +14,15 @@ const Main = () => {
       <div className="background-body">
         <Advantages />
         <ProductCard
-          image={Backpack}
-          title={'РЮКЗАК "SOLVER 2" ЧОРНИЙ'}
+          image={roll_mini}
+          title={'РЮКЗАК "ROLL MINI" ПРИНТ КВІТИ'}
           link={'/assortment'}
         />
         <About />
         <ProductCard
           isImageFirst
-          image={Bag}
-          title={'СУМКА "FLORIDA" ЕКОШКІРА, ЧОРНА'}
+          image={polly}
+          title={'СПІДНИЦІ "POLLY"'}
           link={'/assortment'}
         />
         <Gallery />

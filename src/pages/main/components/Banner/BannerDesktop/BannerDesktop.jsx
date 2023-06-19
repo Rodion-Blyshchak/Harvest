@@ -10,6 +10,18 @@ const BannerDesktop = () => {
     clamp: false,
   })
 
+  const animation = {
+    hidden: {
+      y: 50,
+      opacity: 0,
+    },
+    visible: (custom) => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.2 },
+    }),
+  }
+
   return (
     <section className="relative">
       <motion.img
@@ -20,7 +32,16 @@ const BannerDesktop = () => {
       />
       <div className={styles.content}>
         <Link to="/assortment">
-          <Button buttonType="white">Перейти</Button>
+          <Button
+            initial="hidden"
+            whileInView="visible"
+            variants={animation}
+            custom={2}
+            viewport={{ once: true }}
+            buttonType="white"
+          >
+            Перейти
+          </Button>
         </Link>
       </div>
     </section>
