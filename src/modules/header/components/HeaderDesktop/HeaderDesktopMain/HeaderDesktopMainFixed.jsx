@@ -7,7 +7,7 @@ import styles from './HeaderDesktopMain.module.scss'
 
 const HeaderDesktopMainFixed = () => {
   return (
-    <div className={classNames(styles.header, styles.headerBorder)}>
+    <div className={classNames(styles.header, styles.header__border)}>
       <div className={classNames(styles.bodyFixed, '_container')}>
         <Link to="/">
           <Logo />

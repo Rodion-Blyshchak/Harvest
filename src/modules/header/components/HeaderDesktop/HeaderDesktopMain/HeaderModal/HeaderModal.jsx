@@ -9,7 +9,7 @@ const HeaderModal = ({ children, isModal, setIsModal }) => {
     <>
       <div className={styles.modal} onMouseOver={() => setIsModal(false)}>
         <div
-          className={styles.modalContent}
+          className={styles.modal__content}
           onMouseOver={(event) => event.stopPropagation()}
         >
           {children}

@@ -1,0 +1,14 @@
+.filters {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.buttonBurger {
+  text-align: end;
+  margin: 0 0 20px 10px;
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}

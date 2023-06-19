@@ -1,0 +1,16 @@
+.row {
+  fill: var(--grey-light);
+
+  &__active {
+    fill: var(--black);
+  }
+}
+
+.columnSizeButton {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  background: var(--white-dark);
+  padding: 10px 16px 10px 0;
+  margin-bottom: 20px;
+}

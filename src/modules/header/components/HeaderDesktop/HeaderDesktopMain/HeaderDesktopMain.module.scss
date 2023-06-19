@@ -5,11 +5,11 @@
   height: fit-content;
   background: var(--body-background);
 
-  &Border {
+  &__border {
     border-bottom: 1px solid var(--black-hidden);
   }
 
-  &Fixed {
+  &__fixed {
     position: fixed;
     width: 100%;
     top: 0;

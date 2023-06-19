@@ -27,7 +27,7 @@ const AddGoodsLikesModalContent = ({ goodsItem, totalPrice, onClose }) => {
                   <p className={classNames(styles.text, 'max-w-xs')}>
                     {data.title}
                   </p>
-                  <p className={classNames(styles.textDark, 'text-end pt-2')}>
+                  <p className={classNames(styles.text__dark, 'text-end pt-2')}>
                     {data.id} грн
                   </p>
                 </div>

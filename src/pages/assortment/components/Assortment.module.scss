@@ -1,3 +1,5 @@
+@import '../../../styles/mixins';
+
 .title {
   font-weight: 600;
   font-size: 24px;
@@ -6,74 +8,6 @@
   text-transform: uppercase;
   padding: 34px 0;
   text-align: center;
-}
-
-.list {
-  display: grid;
-  gap: 20px;
-  width: 100%;
-  padding-bottom: 50px;
-
-  &__less {
-    grid-template-columns: repeat(3, minmax(1px, 1fr));
-
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(1, minmax(1px, 1fr));
-    }
-  }
-
-  &__more {
-    grid-template-columns: repeat(4, minmax(1px, 1fr));
-
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(2, minmax(1px, 1fr));
-    }
-  }
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  position: relative;
-  cursor: pointer;
-  height: 100%;
-  @media (min-width: 2200px) {
-    height: fit-content;
-  }
-
-  &Title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: var(--black-text-light);
-  }
-
-  &Price {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 17px;
-    color: var(--black-dark);
-    padding-bottom: 10px;
-  }
-
-  &:hover {
-    .hoverEffect {
-      opacity: 1;
-      transition: var(--transition-default);
-      z-index: 2;
-    }
-  }
-}
-
-.hoverEffect {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: var(--transition-default);
 }
 
 .content {
@@ -86,34 +20,15 @@
   }
 }
 
-.columnSizeButton {
-  display: flex;
+.modalMessage {
+  padding: 20px 0;
+  @include flex-between;
   gap: 20px;
-  justify-content: flex-end;
-  background: var(--white-dark);
-  padding: 10px 16px 10px 0;
-  margin-bottom: 20px;
-}
-
-.row {
-  fill: var(--grey-light);
-
-  &Active {
-    fill: var(--black);
-  }
-}
-
-.filters {
+  height: 100%;
+  line-height: 1.5;
   @media (max-width: 768px) {
-    display: none;
-  }
-}
-
-.buttonBurger {
-  text-align: end;
-  margin: 0 0 20px 10px;
-  display: none;
-  @media (max-width: 768px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }

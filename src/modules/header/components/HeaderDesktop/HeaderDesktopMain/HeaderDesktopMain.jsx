@@ -28,7 +28,7 @@ const HeaderDesktopMain = () => {
       <HeaderDesktopMainDefault />
       {HeaderFixed && (
         <motion.div
-          className={styles.headerFixed}
+          className={styles.header__fixed}
           style={{
             opacity,
           }}

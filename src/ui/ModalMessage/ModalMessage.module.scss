@@ -1,0 +1,12 @@
+@import '../..//styles/mixins';
+
+.modalMessage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background: var(--black-opacity-dark);
+  @include blur-softer;
+  color: var(--white);
+}

@@ -9,7 +9,7 @@
   background: var(--black-opacity);
   @include blur-softer;
 
-  &Content {
+  &__content {
     padding: 16px;
     width: 100%;
     height: fit-content;

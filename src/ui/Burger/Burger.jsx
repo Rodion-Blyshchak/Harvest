@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import styles from './Burger.module.scss'
 
-const Burger = ({ children, isBurger, setIsBurger }) => {
+const Burger = ({ children, isBurger, setIsBurger, className }) => {
   if (!isBurger) {
     return
   }
@@ -14,7 +14,7 @@ const Burger = ({ children, isBurger, setIsBurger }) => {
         </button>
       )}
       <div
-        className={classNames(styles.burger__content, 'scroll-bar')}
+        className={classNames(styles.burger__content, 'scroll-bar', className)}
         onClick={(event) => event.stopPropagation()}
       >
         {children}

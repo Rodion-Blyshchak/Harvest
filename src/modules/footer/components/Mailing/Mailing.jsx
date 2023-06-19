@@ -54,7 +54,7 @@ const Mailing = () => {
         </Button>
         <Modal isOpen={isShowModal} onClose={() => onCloseModal()}>
           <div className={styles.modal}>
-            <p className={styles.modalTitle}>
+            <p className={styles.modal__title}>
               Ви успішно підписалиля на нашу розсилку!
             </p>
 

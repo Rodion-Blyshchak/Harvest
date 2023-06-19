@@ -2,7 +2,7 @@ import useAddBodyClassNameLock from '../../../../hooks/useAddBodyClassNameLock'
 import AssortmentFiltersSelect from './AssortmentFiltersSelect'
 import Button from '../../../../ui/Button/Button'
 import Burger from '../../../../ui/Burger/Burger'
-import styles from '../Assortment.module.scss'
+import styles from './AssortmentFilters.module.scss'
 
 const AssortmentFilters = ({ stateData, setStateData }) => {
   const { isLock, setIsLock } = useAddBodyClassNameLock()
@@ -19,7 +19,11 @@ const AssortmentFilters = ({ stateData, setStateData }) => {
           ФІЛЬТРАЦІЯ
         </Button>
       </div>
-      <Burger isBurger={isLock} setIsBurger={setIsLock}>
+      <Burger
+        isBurger={isLock}
+        setIsBurger={setIsLock}
+        className="py-5 flex justify-center"
+      >
         <AssortmentFiltersSelect
           stateData={stateData}
           setStateData={setStateData}
