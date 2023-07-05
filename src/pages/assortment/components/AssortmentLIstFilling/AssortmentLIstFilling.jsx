@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import useAdaptive from '../../../../hooks/useAdaptive'
 import classNames from 'classnames'
 import AddLikes from '../../../../ui/AddLikes/AddLikes'

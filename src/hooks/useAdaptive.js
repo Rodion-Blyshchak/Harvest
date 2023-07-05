@@ -4,7 +4,7 @@ const useAdaptive = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const match = matchMedia('(max-width: 768px')
+    const match = matchMedia(`(max-width: 768px)`)
     match.addEventListener('change', (event) => {
       setIsMobile(() => event.matches)
     })

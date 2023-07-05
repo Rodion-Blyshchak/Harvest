@@ -41,7 +41,7 @@ const AddGoodsLikesModalContent = ({ goodsItem, totalPrice, onClose }) => {
       <div>
         {goodsItem.length > 0 ? (
           <div className="flex gap-3 justify-between items-center">
-            <p className={styles.textDark}>Разом: {totalPrice} грн </p>
+            <p className={styles.text__dark}>Разом: {totalPrice} грн </p>
             <Button>Оформити замовлення</Button>
           </div>
         ) : (

@@ -11,7 +11,7 @@ export const HeaderListIcon = [
   {
     id: 2,
     icon: <Phone />,
-    link: '/phone',
+    link: 'https://www.linkedin.com/in/rodion-blyshchak-9a5aab264/',
   },
   {
     id: 3,

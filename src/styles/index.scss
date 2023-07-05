@@ -67,6 +67,14 @@ body {
   footer {
     margin-right: $widthScrollbar;
   }
+
+  @media (max-width: 768px) {
+    main,
+    header,
+    footer {
+      margin-right: 0;
+    }
+  }
 }
 
 .scroll-bar {

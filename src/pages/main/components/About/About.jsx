@@ -16,18 +16,6 @@ const About = () => {
     }),
   }
 
-  const animationRight = {
-    hidden: {
-      x: 100,
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      x: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.3 },
-    }),
-  }
-
   const animationLeft = {
     hidden: {
       x: -100,
@@ -56,7 +44,7 @@ const About = () => {
           ПРО HARVEST
         </motion.p>
         <motion.p
-          variants={animationRight}
+          variants={animationLeft}
           custom={2}
           className="description__article text-center"
         >

@@ -25,7 +25,7 @@ const HeaderMobile = () => {
         <HeaderListIconsForUser filter={1} className="fill-black" />
       </div>
       <Burger isBurger={isLock} setIsBurger={setIsLock}>
-        <HeaderBurgerContent />
+        <HeaderBurgerContent setIsBurger={setIsLock} />
       </Burger>
     </header>
   )

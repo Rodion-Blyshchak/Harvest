@@ -16,7 +16,7 @@ const Assortment = () => {
   )
 
   return (
-    <>
+    <section>
       <p className={styles.title}>Assortment</p>
       <AssortmentColumnSize
         columnSize={columnSize}
@@ -41,7 +41,7 @@ const Assortment = () => {
           Закрити
         </Button>
       </ModalMessage>
-    </>
+    </section>
   )
 }
 

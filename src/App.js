@@ -8,6 +8,8 @@ import { Cart } from './pages/cart'
 import { Novelty } from './pages/novelty'
 import { Shops } from './pages/shops'
 import { About } from './pages/about'
+import { User } from './pages/user'
+import { Search } from './pages/search'
 
 const App = () => (
   <>
@@ -21,6 +23,8 @@ const App = () => (
         <Route path="/new" element={<Novelty />} />
         <Route path="/shops" element={<Shops />} />
         <Route path="/about" element={<About />} />
+        <Route path="/user" element={<User />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </main>
     <Footer />

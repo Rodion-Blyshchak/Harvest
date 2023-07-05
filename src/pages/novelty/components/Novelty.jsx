@@ -1,9 +1,9 @@
-import DevelopmentPage from '../../developmentPage/components/DevelopmentPage'
+import Assortment from '../../assortment/components/Assortment'
 
 const Novelty = () => {
   return (
     <>
-      <DevelopmentPage />
+      <Assortment />
     </>
   )
 }
