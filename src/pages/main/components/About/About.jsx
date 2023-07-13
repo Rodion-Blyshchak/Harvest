@@ -2,31 +2,17 @@ import { motion } from 'framer-motion'
 import classNames from 'classnames'
 import AboutList from './AboutList'
 import styles from './About.module.scss'
+import useBasicAnimation from '../../../../hooks/useBasicAnimation'
 
 const About = () => {
-  const animationY = {
-    hidden: {
-      y: 100,
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      y: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.3 },
-    }),
-  }
+  const animationY = useBasicAnimation({
+    hidden: { y: -100 },
+  })
 
-  const animationLeft = {
-    hidden: {
-      x: -100,
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      x: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.3 },
-    }),
-  }
+  const animationX = useBasicAnimation({
+    hidden: { x: -100, y: 0 },
+    visible: { x: 0 },
+  })
 
   return (
     <motion.section
@@ -37,14 +23,14 @@ const About = () => {
     >
       <div className={classNames(styles.body, '_container')}>
         <motion.p
-          variants={animationLeft}
+          variants={animationX}
           custom={1}
           className="title__article text-center"
         >
           ПРО HARVEST
         </motion.p>
         <motion.p
-          variants={animationLeft}
+          variants={animationX}
           custom={2}
           className="description__article text-center"
         >

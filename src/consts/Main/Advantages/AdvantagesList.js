@@ -8,6 +8,7 @@ export const AdvantagesList = [
     title: 'БЕЗКОШТОВНА ДОСТАВКА',
     description: 'Безкоштовна доставка замовлень у магазини HARVEST',
     id: 1,
+    link: '/about',
   },
   {
     image: <Guarantee />,
@@ -15,6 +16,7 @@ export const AdvantagesList = [
     description:
       'Гарантія якості поширюється на рюкзаки та сумки. Здійснити повернення можна протягом 14 днів з моменту купівлі або отримання товару поштовою доставкою. Є можливість післягарантійного ремонту.',
     id: 2,
+    link: '/about',
   },
   {
     image: <Location />,
@@ -22,5 +24,6 @@ export const AdvantagesList = [
     description:
       'Дизайн, конструювання та виготовлення виключно українськими підприємствами.',
     id: 3,
+    link: '/about',
   },
 ]

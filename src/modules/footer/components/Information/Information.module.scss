@@ -32,16 +32,20 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   padding-bottom: 6px;
-  color: #808082;
+  color: var(--grey);
 }
 
 .submenu {
   font-size: 14px;
   line-height: 12px;
-  color: #cdcdce;
+  color: var(--grey-background-light);
   padding: 4px 0;
   transition: 0.3s;
+
+  &__red {
+    color: red;
+  }
   &:hover {
-    color: #808082;
+    color: var(--grey);
   }
 }

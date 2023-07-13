@@ -1,19 +1,10 @@
 import { awards, journals } from '../../../../consts/Main/About/AboutListIcons'
 import { motion } from 'framer-motion'
+import useBasicAnimation from '../../../../hooks/useBasicAnimation'
 import styles from './About.module.scss'
 
 const AboutList = ({ journalsList, awardsList }) => {
-  const animation = {
-    hidden: {
-      y: 100,
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      y: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.3 },
-    }),
-  }
+  const animation = useBasicAnimation({})
 
   return (
     <>

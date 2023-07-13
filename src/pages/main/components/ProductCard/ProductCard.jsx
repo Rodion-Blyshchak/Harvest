@@ -1,21 +1,16 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import useAdaptive from '../../../../hooks/useAdaptive'
+import useBasicAnimation from '../../../../hooks/useBasicAnimation'
 import Button from '../../../../ui/Button/Button'
 import styles from './ProductCard.module.scss'
 
 const ProductCard = ({ isImageFirst, image, title, link }) => {
   const isMobile = useAdaptive()
 
-  const animation = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      opacity: 1,
-      transition: { delay: custom * 0.3 },
-    }),
-  }
+  const animation = useBasicAnimation({
+    hidden: { y: 0 },
+  })
 
   return isMobile ? (
     <></>
@@ -25,7 +20,6 @@ const ProductCard = ({ isImageFirst, image, title, link }) => {
         initial="hidden"
         whileInView="visible"
         variants={animation}
-        custom={4}
         viewport={{ amount: 0.2, once: true }}
         className={styles.product}
       >

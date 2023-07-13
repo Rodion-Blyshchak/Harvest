@@ -6,6 +6,7 @@ export const FooterMEnuLIst = [
       {
         name: 'Знижки',
         linkSubmenu: '/assortment',
+        nameStatus: true,
       },
       {
         name: 'Контакти',
@@ -31,19 +32,19 @@ export const FooterMEnuLIst = [
     dropdown: [
       {
         name: 'Про бренд',
-        linkSubmenu: '/',
+        linkSubmenu: '/about',
       },
       {
         name: 'Наші цінності',
-        linkSubmenu: '/',
+        linkSubmenu: '/about',
       },
       {
         name: 'Виробництво',
-        linkSubmenu: '/',
+        linkSubmenu: '/about',
       },
       {
         name: 'Блог',
-        linkSubmenu: '/',
+        linkSubmenu: '/about',
       },
       {
         name: 'Магазини',

@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import useBasicAnimation from '../../../../../hooks/useBasicAnimation'
 import Image from '../../../../../assets/images/Main/Banner/BannerDesktop/banner.png'
 import Button from '../../../../../ui/Button/Button'
 import styles from './BannerDesktop.module.scss'
@@ -10,17 +11,9 @@ const BannerDesktop = () => {
     clamp: false,
   })
 
-  const animation = {
-    hidden: {
-      y: 50,
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      y: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.2 },
-    }),
-  }
+  const animation = useBasicAnimation({
+    hidden: { y: 50 },
+  })
 
   return (
     <section className="relative">
@@ -36,7 +29,6 @@ const BannerDesktop = () => {
             initial="hidden"
             whileInView="visible"
             variants={animation}
-            custom={2}
             viewport={{ once: true }}
             buttonType="white"
           >

@@ -8,7 +8,7 @@ export const HeaderMenuList = [
   },
   {
     id: 2,
-    title: 'Аксисуари',
+    title: 'Аксесуари',
     later: <Later />,
     link: '/assortment',
     dropdown: [
@@ -51,7 +51,7 @@ export const HeaderMenuList = [
             linkSubmenu: '/assortment',
           },
           {
-            name: 'Поясні сунки',
+            name: 'Поясні сумки',
             linkSubmenu: '/assortment',
           },
         ],
@@ -61,7 +61,7 @@ export const HeaderMenuList = [
         linkTitle: '/assortment',
         submenu: [
           {
-            name: 'Аксисуари для рюкзаків',
+            name: 'Аксесуари для рюкзаків',
             linkSubmenu: '/assortment',
           },
           {

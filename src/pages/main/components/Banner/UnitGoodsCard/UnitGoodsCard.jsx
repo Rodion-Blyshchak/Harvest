@@ -3,19 +3,10 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Button from '../../../../../ui/Button/Button'
 import styles from './UnitGoodsCard.module.scss'
+import useBasicAnimation from '../../../../../hooks/useBasicAnimation'
 
 const UnitGoodsCard = () => {
-  const animation = {
-    hidden: {
-      y: 100,
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      y: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.3 },
-    }),
-  }
+  const animation = useBasicAnimation({})
 
   return (
     <section>
